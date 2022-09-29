@@ -9,10 +9,7 @@ const errorHandler = require("errorhandler");
 // const lusca = require("lusca");
 const dotenv = require("dotenv");
 
-const flash = require("express-flash");
 const path = require("path");
-const mongoose = require("mongoose");
-const passport = require("passport");
 const multer = require("multer");
 const fs = require("fs");
 
