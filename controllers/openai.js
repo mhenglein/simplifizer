@@ -15,4 +15,5 @@ module.exports.summarizer = async (text) => {
   // Break text into chunks of X characters
   // Step 1 Initial summary (Prompt 1)
   // Step 2 Recursive summary (Prompt 2)
+  // Sanity checks
 };

@@ -1,5 +1,5 @@
 {
-  "name": "hackathon-starter",
+  "name": "simplifizer",
   "version": "7.0.0",
   "description": "A boilerplate for Node.js web applications",
   "main": "app.js",
@@ -8,9 +8,7 @@
     "postinstall": "npm rebuild node-sass",
     "start": "node app.js",
     "test": "nyc mocha --timeout=10000 --exit",
-    "lint": "eslint \"**/*.js\"",
-    "build": "npm install",
-    "install": "npm install"
+    "lint": "eslint \"**/*.js\""
   },
   "dependencies": {
     "@node-rs/bcrypt": "^1.6.0",
