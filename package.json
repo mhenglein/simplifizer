@@ -2,6 +2,7 @@
   "name": "hackathon-starter",
   "version": "7.0.0",
   "description": "A boilerplate for Node.js web applications",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sahat/hackathon-starter.git"
