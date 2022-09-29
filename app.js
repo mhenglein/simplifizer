@@ -30,11 +30,6 @@ const homeController = require("./controllers/home");
 const openai = require("./controllers/openai");
 
 /**
- * API keys and Passport configuration.
- */
-const passportConfig = require("./config/passport");
-
-/**
  * Create Express server.
  */
 const app = express();
