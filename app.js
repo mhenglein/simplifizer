@@ -97,10 +97,9 @@ if (process.env.NODE_ENV === "development") {
   });
 }
 
+const port = process.env.PORT || 3001;
+
 /**
  * Start Express server.
  */
-app.listen(app.get("port"), () => {
-  console.log(`App is running on http://localhost:${app.get("port")} in ${app.get("env")} mode`);
-  console.log("Press CTRL-C to stop");
-});
+app.listen(port);
