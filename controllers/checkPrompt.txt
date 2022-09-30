@@ -1,0 +1,26 @@
+CONTEXT
+
+Customer Relationship Management system notes are created from summaries of sales call transcripts.
+
+Customer Relationship Management system notes consist of the following parts:
+- Buyer's current solution
+- Buyer's pain points with current solution
+- Benefits of seller's solution
+- Buyer's decision makers
+- Buyer's reasons to not buy
+- Buyer's decision making process
+- Agreed next steps
+
+This is part <<N>> of <<TOTAL>> parts in a sales call transcript. The call is between Eve Kelly from Pento and Tuf Ahmed from Genflow. Eve is selling to Tuf.
+
+SALES CALL TRANSCRIPT PART <<N>> OF <<TOTAL>>
+
+<<TRANSCRIPT>>
+
+ANALYSING THE TRANSCRIPT
+
+Did <<NAME1>> and <<NAME2>> discuss <<CRM_COMPONENT>>? First show me your workings.
+
+Then please either YES or NO in a <z></z> block so I can parse the final answer easily.
+
+For example <z>YES</z> or <z>NO</z>
