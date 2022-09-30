@@ -53,12 +53,12 @@ app.use("/", express.static(path.join(__dirname, "public"), { maxAge: 3155760000
  */
 app.get("/", homeController.index);
 
-app.post("/upload", upload.single("file"), (req, res) => {
+app.post("/upload", upload.single("file"), async (req, res) => {
   // req.file is the `txt` file
   // req.body will contain the text parsed from the file
 
   const file = req.file;
-  console.log(file);
+
   // open file into a txt file
   // read file
   if (!file) {
@@ -68,11 +68,13 @@ app.post("/upload", upload.single("file"), (req, res) => {
 
   try {
     const text = fs.readFileSync(file.path, "utf8");
-    console.log("⬇️ Incoming text", text);
+    console.log("⬇️ Incoming text", text.length);
 
-    const summarized = openai.summarizer(text);
+    let summarized = await openai.summarizer(text);
+    summarized = summarized.replaceAll("\n", "<br />");
 
-    res.render("home", { summary: text });
+    res.render("home", { summary: summarized });
+
     return;
   } catch (e) {
     if (!res.writableEnded) res.send("Error reading file");

@@ -18,9 +18,9 @@
   <body>
     <main>
       <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Simplifizer ✨</h1>
+        <h1 class="display-5 fw-bold">From sales calls to CRM notes ✨</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Upload a transcript 👇</p>
+          <p class="lead mb-4 mt-5">Upload a call transcript 👇</p>
 
           <!-- upload file -->
           <form action="/upload" method="post" enctype="multipart/form-data">
@@ -30,8 +30,20 @@
             </div>
           </form>
 
+          <p class="lead mb-4 mt-5">Your CRM notes will appear below 🚀</p>
           <div contenteditable="true" class="p-4 text-start border border-primary border-2 rounded-3" style="min-height: 25vh">
-            <% if (typeof summary !== "undefined" && summary) { %> <%= summary %> <% } %>
+            <% if (typeof summary !== "undefined" && summary) { %> <% summary.forEach((s, i) => { %>
+
+            <h2><%= s.component %></h2>
+            <% if (s.arrStrings) { %>
+            <p><%= s.arrStrings %></p>
+            <% } else { %>
+            <p>Not covered</p>
+            <% } %>
+
+            <hr />
+
+            <% }) %> <% } %>
           </div>
         </div>
       </div>

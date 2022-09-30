@@ -19,8 +19,4 @@ SALES CALL TRANSCRIPT PART <<N>> OF <<TOTAL>>
 
 ANALYSING THE TRANSCRIPT
 
-Did <<BUYER>> and <<SELLER>> discuss <<CRM_COMPONENT>>? First show me your workings.
-
-Then please either YES or NO in a <z></z> block so I can parse the final answer easily.
-
-For example <z>YES</z> or <z>NO</z>
+<<BUYER>> and <<SELLER>> discussed <<CRM_COMPONENT>>. Create a detailed bullet point summary regarding <<CRM_COMPONENT>>.
